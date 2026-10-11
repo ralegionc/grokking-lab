@@ -1,0 +1,32 @@
+{
+  "op": "add",
+  "p": 59,
+  "train_frac": 0.5,
+  "arch": "mlp",
+  "d_model": 128,
+  "n_layers": 1,
+  "n_heads": 4,
+  "d_mlp": 512,
+  "act": "quadratic",
+  "use_ln": true,
+  "dropout": 0.0,
+  "steps": 3500,
+  "batch_size": null,
+  "lr": 0.001,
+  "weight_decay": 2.0,
+  "betas": [
+    0.9,
+    0.98
+  ],
+  "warmup_steps": 10,
+  "grad_clip": null,
+  "init_scale": 1.0,
+  "seed": 0,
+  "eval_every": 20,
+  "n_snapshots": 30,
+  "device": "cpu",
+  "threads": 2,
+  "out_dir": "runs\\sweeps",
+  "name": "train_frac_0.5",
+  "notes": "Base settings for the sweeps. A smaller modulus and a shorter budget than the headline run, because a sweep is only useful if it finishes: every point here either groks within a couple of minutes or demonstrably does not."
+}

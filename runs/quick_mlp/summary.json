@@ -1,0 +1,32 @@
+{
+  "run_name": "quick_mlp",
+  "op": "add",
+  "p": 97,
+  "arch": "mlp",
+  "train_frac": 0.4,
+  "weight_decay": 2.0,
+  "seed": 0,
+  "steps": 8000,
+  "n_parameters": 193889,
+  "n_train": 3764,
+  "n_val": 5645,
+  "memorisation_step": 140,
+  "grok_step_95": 1300,
+  "grok_step_99": 1360,
+  "final_train_acc": 1.0,
+  "final_val_acc": 1.0,
+  "final_val_loss": 7.820085509357673e-07,
+  "final_weight_norm": 34.1682014465332,
+  "key_frequencies": [
+    14,
+    33,
+    36,
+    38,
+    44,
+    48
+  ],
+  "freq_concentration": 0.8391985893249512,
+  "wall_seconds": 1032.6,
+  "steps_requested": 8000,
+  "stopped_early": null
+}

@@ -1,0 +1,30 @@
+{
+  "run_name": "headline",
+  "op": "add",
+  "p": 97,
+  "arch": "transformer",
+  "train_frac": 0.3,
+  "weight_decay": 1.0,
+  "seed": 0,
+  "steps": 25000,
+  "n_parameters": 222592,
+  "n_train": 2823,
+  "n_val": 6586,
+  "memorisation_step": 125,
+  "grok_step_95": 5125,
+  "grok_step_99": 5500,
+  "final_train_acc": 1.0,
+  "final_val_acc": 1.0,
+  "final_val_loss": 0.0005245711569579003,
+  "final_weight_norm": 35.75425720214844,
+  "key_frequencies": [
+    19,
+    29,
+    31,
+    36
+  ],
+  "freq_concentration": 0.9096383452415466,
+  "wall_seconds": 6857.1,
+  "steps_requested": 25000,
+  "stopped_early": null
+}

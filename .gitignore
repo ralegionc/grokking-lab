@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+logs_*.txt
+
+# Runs are reproducible from configs/, but the five the README draws on are
+# committed so the figures can be redrawn without spending two hours on a CPU.
+runs/*
+!runs/headline/
+!runs/wide_split/
+!runs/quick_mlp/
+!runs/div_p59/
+!runs/sweeps/
+
+# A sweep point is only ever read through its summary, so its weights and
+# embedding snapshots are not kept. Rerun `make sweeps` if you want them.
+runs/sweeps/*/model.pt
+runs/sweeps/*/snapshots.npz

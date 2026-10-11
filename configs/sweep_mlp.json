@@ -1,0 +1,21 @@
+{
+  "notes": "Base settings for the sweeps. A smaller modulus and a shorter budget than the headline run, because a sweep is only useful if it finishes: every point here either groks within a couple of minutes or demonstrably does not.",
+  "op": "add",
+  "p": 59,
+  "train_frac": 0.5,
+  "arch": "mlp",
+  "d_model": 128,
+  "d_mlp": 512,
+  "act": "quadratic",
+  "steps": 3500,
+  "lr": 0.001,
+  "weight_decay": 2.0,
+  "betas": [
+    0.9,
+    0.98
+  ],
+  "warmup_steps": 10,
+  "seed": 0,
+  "eval_every": 20,
+  "n_snapshots": 30
+}

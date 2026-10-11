@@ -1,0 +1,23 @@
+{
+  "name": "quick_mlp",
+  "notes": "The short version. A two layer MLP with a quadratic activation groks the same task far sooner than a transformer does, which makes it the right model for sweeps and for a first look. About twenty minutes on a laptop CPU.",
+  "op": "add",
+  "p": 97,
+  "train_frac": 0.4,
+  "arch": "mlp",
+  "d_model": 128,
+  "d_mlp": 512,
+  "act": "quadratic",
+  "steps": 8000,
+  "lr": 0.001,
+  "weight_decay": 2.0,
+  "betas": [
+    0.9,
+    0.98
+  ],
+  "warmup_steps": 10,
+  "seed": 0,
+  "eval_every": 20,
+  "n_snapshots": 60,
+  "threads": 4
+}

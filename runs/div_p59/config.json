@@ -1,0 +1,32 @@
+{
+  "op": "div",
+  "p": 59,
+  "train_frac": 0.5,
+  "arch": "mlp",
+  "d_model": 128,
+  "n_layers": 1,
+  "n_heads": 4,
+  "d_mlp": 512,
+  "act": "quadratic",
+  "use_ln": true,
+  "dropout": 0.0,
+  "steps": 6000,
+  "batch_size": null,
+  "lr": 0.001,
+  "weight_decay": 2.0,
+  "betas": [
+    0.9,
+    0.98
+  ],
+  "warmup_steps": 10,
+  "grad_clip": null,
+  "init_scale": 1.0,
+  "seed": 0,
+  "eval_every": 20,
+  "n_snapshots": 40,
+  "device": "cpu",
+  "threads": 8,
+  "out_dir": "runs",
+  "name": "div_p59",
+  "notes": "Modular division, to check that the same story holds for an operation where interpolation is hopeless: nothing about a/b varies smoothly with a or b. Same model and budget as the sweep points, so the grokking step is directly comparable to add_p59."
+}

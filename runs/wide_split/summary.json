@@ -1,0 +1,31 @@
+{
+  "run_name": "wide_split",
+  "op": "add",
+  "p": 97,
+  "arch": "transformer",
+  "train_frac": 0.4,
+  "weight_decay": 1.0,
+  "seed": 0,
+  "steps": 25000,
+  "n_parameters": 222592,
+  "n_train": 3764,
+  "n_val": 5645,
+  "memorisation_step": 150,
+  "grok_step_95": 2550,
+  "grok_step_99": 2950,
+  "final_train_acc": 1.0,
+  "final_val_acc": 1.0,
+  "final_val_loss": 7.935341635671097e-05,
+  "final_weight_norm": 34.03411865234375,
+  "key_frequencies": [
+    19,
+    29,
+    31,
+    36,
+    39
+  ],
+  "freq_concentration": 0.9503064751625061,
+  "wall_seconds": 8341.7,
+  "steps_requested": 25000,
+  "stopped_early": null
+}

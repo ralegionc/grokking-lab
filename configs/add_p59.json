@@ -1,0 +1,20 @@
+{
+  "name": "add_p59",
+  "notes": "The control for div_p59: identical in every way except the operation. Having both lets the two bases be compared on the same modulus and the same model.",
+  "op": "add",
+  "p": 59,
+  "train_frac": 0.5,
+  "arch": "mlp",
+  "d_model": 128,
+  "d_mlp": 512,
+  "act": "quadratic",
+  "steps": 6000,
+  "lr": 1e-3,
+  "weight_decay": 2.0,
+  "betas": [0.9, 0.98],
+  "warmup_steps": 10,
+  "seed": 0,
+  "eval_every": 20,
+  "n_snapshots": 40,
+  "threads": 5
+}

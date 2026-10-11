@@ -1,0 +1,32 @@
+{
+  "op": "add",
+  "p": 97,
+  "train_frac": 0.4,
+  "arch": "mlp",
+  "d_model": 128,
+  "n_layers": 1,
+  "n_heads": 4,
+  "d_mlp": 512,
+  "act": "quadratic",
+  "use_ln": true,
+  "dropout": 0.0,
+  "steps": 8000,
+  "batch_size": null,
+  "lr": 0.001,
+  "weight_decay": 2.0,
+  "betas": [
+    0.9,
+    0.98
+  ],
+  "warmup_steps": 10,
+  "grad_clip": null,
+  "init_scale": 1.0,
+  "seed": 0,
+  "eval_every": 20,
+  "n_snapshots": 60,
+  "device": "cpu",
+  "threads": 4,
+  "out_dir": "runs",
+  "name": "quick_mlp",
+  "notes": "The five minute version. A two layer MLP with a quadratic activation groks the same task far sooner than a transformer does, which makes it the right model for sweeps and for a first look."
+}

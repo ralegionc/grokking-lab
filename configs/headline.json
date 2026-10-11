@@ -1,0 +1,26 @@
+{
+  "name": "headline",
+  "notes": "The main experiment: a one layer transformer on a + b mod 97, shown 30% of the table, full batch, strong weight decay. LayerNorm is switched off so that the Fourier analysis of the residual stream is exact rather than approximate.",
+  "op": "add",
+  "p": 97,
+  "train_frac": 0.3,
+  "arch": "transformer",
+  "d_model": 128,
+  "n_layers": 1,
+  "n_heads": 4,
+  "d_mlp": 512,
+  "act": "relu",
+  "use_ln": false,
+  "steps": 25000,
+  "lr": 0.001,
+  "weight_decay": 1.0,
+  "betas": [
+    0.9,
+    0.98
+  ],
+  "warmup_steps": 10,
+  "seed": 0,
+  "eval_every": 25,
+  "n_snapshots": 80,
+  "threads": 7
+}

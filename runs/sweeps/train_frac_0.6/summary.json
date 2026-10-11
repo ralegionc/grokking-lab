@@ -1,0 +1,30 @@
+{
+  "run_name": "train_frac_0.6",
+  "op": "add",
+  "p": 59,
+  "arch": "mlp",
+  "train_frac": 0.6,
+  "weight_decay": 2.0,
+  "seed": 0,
+  "steps": 3500,
+  "n_parameters": 169531,
+  "n_train": 2089,
+  "n_val": 1392,
+  "memorisation_step": 120,
+  "grok_step_95": 580,
+  "grok_step_99": 600,
+  "final_train_acc": 1.0,
+  "final_val_acc": 1.0,
+  "final_val_loss": 6.911054122443686e-07,
+  "final_weight_norm": 31.905668258666992,
+  "key_frequencies": [
+    3,
+    5,
+    15,
+    16
+  ],
+  "freq_concentration": 0.8604450225830078,
+  "wall_seconds": 348.6,
+  "steps_requested": 3500,
+  "stopped_early": null
+}

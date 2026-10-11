@@ -1,0 +1,30 @@
+{
+  "run_name": "weight_decay_2.0",
+  "op": "add",
+  "p": 59,
+  "arch": "mlp",
+  "train_frac": 0.5,
+  "weight_decay": 2.0,
+  "seed": 0,
+  "steps": 3500,
+  "steps_requested": 3500,
+  "stopped_early": null,
+  "n_parameters": 169531,
+  "n_train": 1740,
+  "n_val": 1741,
+  "memorisation_step": 100,
+  "grok_step_95": 860,
+  "grok_step_99": 900,
+  "final_train_acc": 1.0,
+  "final_val_acc": 1.0,
+  "final_val_loss": 5.407896578110785e-07,
+  "final_weight_norm": 29.483524322509766,
+  "key_frequencies": [
+    3,
+    5,
+    14,
+    15
+  ],
+  "freq_concentration": 0.9589898586273193,
+  "wall_seconds": 321.5
+}

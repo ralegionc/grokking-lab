@@ -1,0 +1,31 @@
+{
+  "run_name": "seed_1",
+  "op": "add",
+  "p": 59,
+  "arch": "mlp",
+  "train_frac": 0.5,
+  "weight_decay": 2.0,
+  "seed": 1,
+  "steps": 3500,
+  "steps_requested": 3500,
+  "stopped_early": null,
+  "n_parameters": 169531,
+  "n_train": 1740,
+  "n_val": 1741,
+  "memorisation_step": 100,
+  "grok_step_95": 980,
+  "grok_step_99": 1040,
+  "final_train_acc": 1.0,
+  "final_val_acc": 1.0,
+  "final_val_loss": 6.283649726461091e-07,
+  "final_weight_norm": 29.988384246826172,
+  "key_frequencies": [
+    4,
+    5,
+    12,
+    14,
+    25
+  ],
+  "freq_concentration": 0.9568847417831421,
+  "wall_seconds": 229.8
+}

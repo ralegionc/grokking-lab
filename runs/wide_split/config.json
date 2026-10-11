@@ -1,0 +1,32 @@
+{
+  "op": "add",
+  "p": 97,
+  "train_frac": 0.4,
+  "arch": "transformer",
+  "d_model": 128,
+  "n_layers": 1,
+  "n_heads": 4,
+  "d_mlp": 512,
+  "act": "relu",
+  "use_ln": false,
+  "dropout": 0.0,
+  "steps": 25000,
+  "batch_size": null,
+  "lr": 0.001,
+  "weight_decay": 1.0,
+  "betas": [
+    0.9,
+    0.98
+  ],
+  "warmup_steps": 10,
+  "grad_clip": null,
+  "init_scale": 1.0,
+  "seed": 0,
+  "eval_every": 25,
+  "n_snapshots": 80,
+  "device": "cpu",
+  "threads": 7,
+  "out_dir": "runs",
+  "name": "wide_split",
+  "notes": "The main experiment: a one layer transformer on a + b mod 97, full batch, strong weight decay. LayerNorm is switched off so that the Fourier analysis of the residual stream is exact rather than approximate."
+}
